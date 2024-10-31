@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.particles-bg-canvas circle {
+  fill: #ff0000;
+  fill: #ff6347;
+  fill: #ff7f50;
+  fill: #ffa07a;
+  fill: #ffd700;
+}

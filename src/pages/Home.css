@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.intro {
+    position: absolute;
+    top: 100px;
+    right: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 3.5em;
+    font-family: 'monospace', 'light';;
+    font-weight: 400;
+    background-color: #ffffff00;
+    color: white;
+}
+
+.intro2 {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5em;
+    font-family: 'monospace', 'light';
+    font-style: italic;
+    font-weight: 800;
+    background-color: #ffffff00;
+    color: white;
+}
+.profile-pic {
+    width: 300px;          /* Adjust as needed */
+    height: 300px;         /* Adjust as needed */
+    border-radius: 50%;    /* Makes the image circular */
+    object-fit: cover;     /* Ensures the image fits within the circular shape */
+    margin-bottom: 20px;
+  }
+  

@@ -10,8 +10,7 @@
     font-size: 3.5em;
     font-family: 'monospace', 'light';;
     font-weight: 400;
-    background-color: #ffffff00;
-    color: white;
+    color: var(--text-color);
 }
 
 .intro2 {
@@ -26,14 +25,13 @@
     font-family: 'monospace', 'light';
     font-style: italic;
     font-weight: 800;
-    background-color: #ffffff00;
-    color: white;
+    color: var(--text-color);
 }
 .profile-pic {
-    width: 300px;          /* Adjust as needed */
-    height: 300px;         /* Adjust as needed */
-    border-radius: 50%;    /* Makes the image circular */
-    object-fit: cover;     /* Ensures the image fits within the circular shape */
+    width: 300px;          
+    height: 300px;        
+    border-radius: 50%;    
+    object-fit: cover;     
     margin-bottom: 20px;
   }
   

@@ -1,5 +1,5 @@
-// src/App.jsx
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 import ParticlesBg from 'particles-bg';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -9,17 +9,25 @@ import Education from './pages/Education';
 import './App.css';
 
 function App() {
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
   return (
     <Router>
-      <ParticlesBg color={["#ff0000", "#ff6347", "#ff7f50", "#ffa07a", "#ffd700"]} num={200} type="circle" bg={true} />
-      <Navbar />
-      <div className="content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Education" element={<Education />} />
-        </Routes>
+      <div className="background-layer" />
+        <ParticlesBg color={["#ff0000", "#ff6347", "#ff7f50", "#ffa07a", "#ffd700"]} num={10} type="circle" bg={true} />
+        <Navbar setTheme={setTheme} theme={theme} />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/education" element={<Education />} />
+          </Routes>
       </div>
     </Router>
   );

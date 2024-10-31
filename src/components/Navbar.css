@@ -8,16 +8,33 @@
     padding: 1rem;
     font-size: 1.5em;
     font-family: 'monospace', 'light';
-    background-color: #ffffff00;
-    color: white;
+    color: var(--text-color);
 }
 
 .links a {
     margin: 0 1rem;
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .links a:hover {
     text-decoration: underline;
 }
+
+.theme-toggle {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--button-background);
+    font-family: 'monospace', 'light';
+    font-size: 0.8em;
+    border-radius: 20px;
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #444;
+  }
+  

@@ -1,15 +1,16 @@
 import React from 'react';
 import './Home.css';
 import profilePic from '../assets/kithmini.jpg';
+import ColourButton from '../components/ColourButton';
 
 function Home() {
     return (
         <div className="intro">
             <img src={profilePic} alt="Profile" className="profile-pic" />
-            <h2>Kithmini</h2>
             <div className="intro2">
-                <h2>Joseph</h2>
-                <a></a>
+                <h2>Kithmini Joseph</h2>
+                <p>software developer | computer science & AI student</p>
+                <ColourButton />
             </div>
         </div>
     );

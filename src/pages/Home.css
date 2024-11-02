@@ -14,17 +14,23 @@
 }
 
 .intro2 {
-    position: absolute;
-    top: 100px;
+    position: relative;
+    top: 300px;
     right: 0px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    font-size: 1.5em;
+    font-size: 1.0em;
     font-family: 'monospace', 'light';
-    font-style: italic;
-    font-weight: 800;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.intro2 p {
+    top: 300px;
+    right: 0px;
+    align-items: center;
+    font-size: 0.5em;
+    font-family: 'monospace', 'light';
+    font-weight: 400;
     color: var(--text-color);
 }
 .profile-pic {
@@ -33,5 +39,8 @@
     border-radius: 50%;    
     object-fit: cover;     
     margin-bottom: 20px;
+    position: absolute;
+    top: 50px;
+    right: 150px;
   }
   

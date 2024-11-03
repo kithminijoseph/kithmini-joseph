@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './ColourButton.css'; 
 
 const ColorTextButton = () => {
-  const texts = ["python", "java", "c++", "sql", "groovy"];
+  const texts = ["python", "java", "c++", "sql", "groovy", "css", "html", "php"];
   const colors = ["#000000"];
 
   const [index, setIndex] = useState(0);

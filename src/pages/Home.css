@@ -24,13 +24,15 @@
     color: var(--text-color);
 }
 
-.intro2 p {
-    top: 300px;
+.intro3 {
+    position: relative;
+    top: -50px;
     right: 0px;
     align-items: center;
     font-size: 0.5em;
     font-family: 'monospace', 'light';
     font-weight: 400;
+    font-style: oblique;
     color: var(--text-color);
 }
 .profile-pic {

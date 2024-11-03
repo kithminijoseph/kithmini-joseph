@@ -9,7 +9,7 @@ function Home() {
             <img src={profilePic} alt="Profile" className="profile-pic" />
             <div className="intro2">
                 <h2>Kithmini Joseph</h2>
-                <p>software developer | computer science & AI student</p>
+                <h3 className="intro3"> software developer | computer science & AI student</h3>
                 <ColourButton />
             </div>
         </div>

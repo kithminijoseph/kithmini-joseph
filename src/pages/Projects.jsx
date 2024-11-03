@@ -12,8 +12,8 @@ const projectData = [
           <a href="https://github.com/SamB032/CM20314-ESP-Recycling-Backend" target="_blank" rel="noopener noreferrer">GitHub - private repository</a>
         </div>
       ),
-    videoUrl: "src/assets/recyclingproject.mp4",
-    thumbnail: "src/assets/recycling.png",
+    videoUrl: "/recyclingproject.mp4",
+    thumbnail: "/recycling.png",
   },
   {
     title: "Project Two",

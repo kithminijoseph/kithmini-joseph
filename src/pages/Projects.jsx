@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
+import videoFile from '../assets/recyclingproject.mp4';
+import thumbnailImage from '../assets/recycling.png';
 
 const projectData = [
   {
@@ -12,8 +14,8 @@ const projectData = [
           <a href="https://github.com/SamB032/CM20314-ESP-Recycling-Backend" target="_blank" rel="noopener noreferrer">GitHub - private repository</a>
         </div>
       ),
-    videoUrl: "/recyclingproject.mp4",
-    thumbnail: "/recycling.png",
+    videoUrl: videoFile,
+    thumbnail: "src/assets/recycling.png",
   },
   {
     title: "Project Two",

@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import ParticlesBg from 'particles-bg';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -18,6 +18,7 @@ function App() {
 
   return (
     <Router>
+      <Routes>
       <div className="background-layer" />
         <ParticlesBg color={["#ff0000", "#ff6347", "#ff7f50", "#ffa07a", "#ffd700"]} num={10} type="circle" bg={true} />
         <Navbar setTheme={setTheme} theme={theme} />
@@ -29,6 +30,7 @@ function App() {
             <Route path="/education" element={<Education />} />
           </Routes>
       </div>
+      </Routes>
     </Router>
   );
 }

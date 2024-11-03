@@ -15,7 +15,7 @@ const projectData = [
         </div>
       ),
     videoUrl: videoFile,
-    thumbnail: "src/assets/recycling.png",
+    thumbnail: thumbnailImage,
   },
   {
     title: "Project Two",

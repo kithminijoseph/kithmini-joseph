@@ -52,7 +52,7 @@ const Projects = () => {
             )}
           </div>
           <div className="project-details">
-            <h3>{project.title}</h3>
+            <p3>{project.title}</p3>
             <p>{project.description}</p>
             {playingIndex !== index && (
               <button onClick={() => handlePlay(index)} className="play-button">

@@ -2,26 +2,37 @@ import React, { useState } from 'react';
 import './Projects.css';
 import videoFile from '../assets/recyclingproject.mp4';
 import thumbnailImage from '../assets/recycling.png';
+import thumbnailImage2 from '../assets/arduino.png';
 
 const projectData = [
   {
     title: "AI Image Scanning Recycling App",
-    description:(
-        <div>
-          <p>Image scanning model base trained on a ResNet18 architecture utilising open recycling datasets.</p>
-          <p>Frontend created using Expo and React Native, storing user data in SQLite3 databases.</p>
-          <p>App compliant with Bath Council Recycling guidelines.</p>
-          <a href="https://github.com/SamB032/CM20314-ESP-Recycling-Backend" target="_blank" rel="noopener noreferrer">GitHub - private repository</a>
-        </div>
-      ),
+    description: (
+      <div>
+        <p>Image scanning model base trained on a ResNet18 architecture utilizing open recycling datasets.</p>
+        <p>Frontend created using Expo and React Native, storing user data in SQLite3 databases.</p>
+        <p>App compliant with Bath Council Recycling guidelines.</p>
+        <a href="https://github.com/SamB032/CM20314-ESP-Recycling-Backend" target="_blank" rel="noopener noreferrer">GitHub - private repository</a>
+      </div>
+    ),
     videoUrl: videoFile,
+    videoType: "local", 
     thumbnail: thumbnailImage,
   },
   {
-    title: "Project Two",
-    description: "An innovative solution for everyday problems.",
-    videoUrl: "https://path-to-your-video2.mp4",
-    thumbnail: "https://path-to-thumbnail2.jpg",
+    title: "Arduino Motion-Controlled Travelling Bot",
+    description: (
+      <div>
+        <p>Arduino-powered bot mounted on a four-wheel DC chassis and equipped with a Grove ultrasonic sensor on an extended servo arm.</p>
+        <p>The bot moves forward, left, and right using joystick controls, with built-in safety features to prevent the lid from opening while in motion.</p>
+        <p>Prototype to assist elderly individuals with heavy loads, the bot is especially useful in grocery stores.</p>
+        <p>Programmed in C++</p>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    ),
+    videoUrl: "https://www.youtube.com/embed/FqdazyOi25g?si=5apmjOwW5UveZSTu", 
+    videoType: "youtube", 
+    thumbnail: thumbnailImage2,
   },
 ];
 
@@ -38,13 +49,27 @@ const Projects = () => {
         <div key={index} className="project-card">
           <div className="video-container">
             {playingIndex === index ? (
-              <video
-                src={project.videoUrl}
-                controls
-                autoPlay
-                onEnded={() => setPlayingIndex(null)} 
-                className="project-video"
-              />
+              project.videoType === "local" ? (
+                <video
+                  src={project.videoUrl}
+                  controls
+                  autoPlay
+                  onEnded={() => setPlayingIndex(null)}
+                  className="project-video"
+                />
+              ) : (
+                <iframe
+                  width="560"
+                  height="315"
+                  src={project.videoUrl}
+                  title={project.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="project-video"
+                />
+              )
             ) : (
               <img
                 src={project.thumbnail}
@@ -54,8 +79,8 @@ const Projects = () => {
             )}
           </div>
           <div className="project-details">
-            <p3>{project.title}</p3>
-            <p>{project.description}</p>
+            <p>{project.title}</p>
+            <div>{project.description}</div>
             {playingIndex !== index && (
               <button onClick={() => handlePlay(index)} className="play-button">
                 ▶ Play Video

@@ -37,7 +37,8 @@
 .profile-pic {
     width: 300px;          
     height: 300px;        
-    border-radius: 50%;    
+    border-radius: 50%;   
+    align-items: center; 
     object-fit: cover;     
     margin-bottom: 20px;
     position: absolute;

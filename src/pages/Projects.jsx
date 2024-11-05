@@ -5,6 +5,8 @@ import thumbnailImage from '../assets/recycling.png';
 import thumbnailImage2 from '../assets/arduino.png';
 import videoFile2 from '../assets/levelgame.mp4';
 import thumbnailImage3 from '../assets/levelgame.png';
+import videoFile3 from '../assets/3dmodel.mp4';
+import thumbnailImage4 from '../assets/3dmodel.png';
 
 const projectData = [
   {
@@ -37,10 +39,10 @@ const projectData = [
     thumbnail: thumbnailImage2,
   },
   {
-    title: "Mini Platformer Game ",
+    title: "Mini Platformer Game",
     description: (
       <div>
-        <p>A 2D platformer game built using Python and PyGame.</p>
+        <p>3D modelling on Blender graphics software to simulate dynamic fabric movement</p>
         <p>Rewards: Collect strawberries and raspberries to boost your score.</p>
         <p>Threats: Dodge obstacles like lava pools and avoid enemy ninja frogs to survive.</p>
         <p>Levels & Challenges: Each level increases in difficulty, introducing new threats and rewards.</p>
@@ -51,6 +53,18 @@ const projectData = [
     videoUrl: videoFile2,
     videoType: "local", 
     thumbnail: thumbnailImage3,
+  },
+  {
+    title: "3D Modelling Fabric Simulation",
+    description: (
+      <div>
+        <p>A 2D platformer game built using Python and PyGame.</p>
+        <p>Developing 2D mesh systems and controlling spring tensions.</p>
+      </div>
+    ),
+    videoUrl: videoFile3,
+    videoType: "local", 
+    thumbnail: thumbnailImage4,
   },
 ];
 

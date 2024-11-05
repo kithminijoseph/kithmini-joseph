@@ -20,7 +20,7 @@ const projectData = [
       </div>
     ),
     videoUrl: videoFile,
-    videoType: "local", 
+    videoType: "local",
     thumbnail: thumbnailImage,
   },
   {
@@ -34,8 +34,8 @@ const projectData = [
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     ),
-    videoUrl: "https://www.youtube.com/embed/FqdazyOi25g?si=5apmjOwW5UveZSTu", 
-    videoType: "youtube", 
+    videoUrl: "https://www.youtube.com/embed/FqdazyOi25g?si=5apmjOwW5UveZSTu",
+    videoType: "youtube",
     thumbnail: thumbnailImage2,
   },
   {
@@ -51,7 +51,7 @@ const projectData = [
       </div>
     ),
     videoUrl: videoFile2,
-    videoType: "local", 
+    videoType: "local",
     thumbnail: thumbnailImage3,
   },
   {
@@ -63,7 +63,7 @@ const projectData = [
       </div>
     ),
     videoUrl: videoFile3,
-    videoType: "local", 
+    videoType: "local",
     thumbnail: thumbnailImage4,
   },
 ];
@@ -107,11 +107,12 @@ const Projects = () => {
                 src={project.thumbnail}
                 alt={project.title}
                 className="project-thumbnail"
+                onClick={() => handlePlay(index)}
               />
             )}
           </div>
           <div className="project-details">
-            <p3>{project.title}</p3>
+            <h3>{project.title}</h3>
             <div>{project.description}</div>
             {playingIndex !== index && (
               <button onClick={() => handlePlay(index)} className="play-button">

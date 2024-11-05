@@ -3,6 +3,8 @@ import './Projects.css';
 import videoFile from '../assets/recyclingproject.mp4';
 import thumbnailImage from '../assets/recycling.png';
 import thumbnailImage2 from '../assets/arduino.png';
+import videoFile2 from '../assets/levelgame.mp4';
+import thumbnailImage3 from '../assets/levelgame.png';
 
 const projectData = [
   {
@@ -33,6 +35,22 @@ const projectData = [
     videoUrl: "https://www.youtube.com/embed/FqdazyOi25g?si=5apmjOwW5UveZSTu", 
     videoType: "youtube", 
     thumbnail: thumbnailImage2,
+  },
+  {
+    title: "Mini Platformer Game ",
+    description: (
+      <div>
+        <p>A 2D platformer game built using Python and PyGame.</p>
+        <p>Rewards: Collect strawberries and raspberries to boost your score.</p>
+        <p>Threats: Dodge obstacles like lava pools and avoid enemy ninja frogs to survive.</p>
+        <p>Levels & Challenges: Each level increases in difficulty, introducing new threats and rewards.</p>
+        <p>This game demonstrates basic game physics, sprite animations, and collision detection.</p>
+        <a href="https://github.com/kithminijoseph/levelgame" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    ),
+    videoUrl: videoFile2,
+    videoType: "local", 
+    thumbnail: thumbnailImage3,
   },
 ];
 
@@ -79,7 +97,7 @@ const Projects = () => {
             )}
           </div>
           <div className="project-details">
-            <p>{project.title}</p>
+            <p3>{project.title}</p3>
             <div>{project.description}</div>
             {playingIndex !== index && (
               <button onClick={() => handlePlay(index)} className="play-button">

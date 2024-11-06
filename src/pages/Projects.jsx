@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import videoFile from '../assets/recyclingproject.mp4';
 import thumbnailImage from '../assets/recycling.png';
 import thumbnailImage2 from '../assets/arduino.png';
-import videoFile2 from '../assets/levelgame.mp4';
 import thumbnailImage3 from '../assets/levelgame.png';
-import videoFile3 from '../assets/3dmodel.mp4';
 import thumbnailImage4 from '../assets/3dmodel.png';
 
 const projectData = [
@@ -19,8 +16,8 @@ const projectData = [
         <a href="https://github.com/SamB032/CM20314-ESP-Recycling-Backend" target="_blank" rel="noopener noreferrer">GitHub - private repository</a>
       </div>
     ),
-    videoUrl: videoFile,
-    videoType: "local",
+    videoUrl: "https://www.youtube.com/embed/z94_ha8EhuA?si=jxGDkuRTUeiQhm3w",
+    videoType: "youtube",
     thumbnail: thumbnailImage,
   },
   {
@@ -50,8 +47,8 @@ const projectData = [
         <a href="https://github.com/kithminijoseph/levelgame" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     ),
-    videoUrl: videoFile2,
-    videoType: "local",
+    videoUrl: "https://youtube.com/embed/HqTrC67U1Z8?si=yo-OjB5cfX9XSgem",
+    videoType: "youtube",
     thumbnail: thumbnailImage3,
   },
   {
@@ -62,8 +59,8 @@ const projectData = [
         <p>Developing 2D mesh systems and controlling spring tensions.</p>
       </div>
     ),
-    videoUrl: videoFile3,
-    videoType: "local",
+    videoUrl: "https://www.youtube.com/embed/Uu4orl8AH10?si=PaZ692U5UxY2oyDm",
+    videoType: "youtube",
     thumbnail: thumbnailImage4,
   },
 ];

@@ -1,0 +1,61 @@
+@media screen and (min-width: 1000px) {
+.pic {      
+    width: 300px;          
+    height: 300px;        
+    align-items: center;  
+    position: absolute;
+    right: 900px;
+  }
+
+.intro h {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2.5em;
+    font-family: 'monospace', 'light';;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.intro p {
+    position: relative;
+    top: 300px;
+    right: 0px;
+    font-size: 1.0em;
+    font-family: 'monospace', 'light';
+    font-weight: 500;
+    color: var(--text-color);
+}
+.intro p1 {
+    position: relative;
+    top: 400px;
+    right: 0px;
+    font-size: 0.5em;
+    font-family: 'monospace', 'light';
+    font-weight: 500;
+    color: var(--text-color);
+}
+.intro p2 {
+    position: relative;
+    top: 400px;
+    right: 0px;
+    font-size: 0.5em;
+    font-family: 'monospace', 'light';
+    font-weight: 500;
+    color: var(--text-color);
+}
+.intro p3 {
+    position: relative;
+    top: 400px;
+    right: 0px;
+    font-size: 0.5em;
+    font-family: 'monospace', 'light';
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+}
+  

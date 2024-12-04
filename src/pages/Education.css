@@ -1,61 +1,44 @@
 @media screen and (min-width: 1000px) {
-.pic {      
-    width: 300px;          
-    height: 300px;        
-    align-items: center;  
-    position: absolute;
-    right: 900px;
+  .intro h {
+    position: fixed;
+    top: 80px;
+    right: 700px;
+    font-size: 1.5em;
+    font-family: 'monospace', light;
+    font-weight: 500;
+    color: var(--text-color);
   }
 
-.intro h {
+  .pic {
+    width: 500px;
+    height: 500px;
     position: absolute;
-    top: 100px;
-    right: 200px;
-    display: flex;
-    justify-content: space-between;
+    top: -200px;
+    right: 750px;
+    display: flex; 
     align-items: center;
-    padding: 1rem;
-    font-size: 2.5em;
-    font-family: 'monospace', 'light';;
-    font-weight: 400;
-    color: var(--text-color);
-}
-.intro p {
-    position: relative;
-    top: 300px;
-    right: 0px;
-    font-size: 1.0em;
-    font-family: 'monospace', 'light';
-    font-weight: 500;
-    color: var(--text-color);
-}
-.intro p1 {
-    position: relative;
-    top: 400px;
-    right: 0px;
-    font-size: 0.5em;
-    font-family: 'monospace', 'light';
-    font-weight: 500;
-    color: var(--text-color);
-}
-.intro p2 {
-    position: relative;
-    top: 400px;
-    right: 0px;
-    font-size: 0.5em;
-    font-family: 'monospace', 'light';
-    font-weight: 500;
-    color: var(--text-color);
-}
-.intro p3 {
-    position: relative;
-    top: 400px;
-    right: 0px;
-    font-size: 0.5em;
-    font-family: 'monospace', 'light';
-    font-weight: 500;
-    color: var(--text-color);
-}
+  }
 
+
+  .intro p, 
+  .intro p1, 
+  .intro p2, 
+  .intro p3, 
+  .intro p4, 
+  .intro p5 {
+    position: fixed;
+    text-align: left;
+    font-size: 0.5em;
+    font-family: 'monospace', light;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+
+
+  .intro p { top: 130px; right: 500px; font-size: 0.6em; } /* Larger size for primary paragraph */
+  .intro p1 { top: 300px; right: 500px; }
+  .intro p2 { top: 350px; right: 500px; }
+  .intro p3 { top: 400px; right: 500px; }
+  .intro p4 { top: 450px; right: 500px; }
+  .intro p5 { top: 500px; right: 500px; }
 }
-  

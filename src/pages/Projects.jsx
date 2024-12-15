@@ -39,7 +39,7 @@ const projectData = [
     title: "Mini Platformer Game",
     description: (
       <div>
-        <p>3D modelling on Blender graphics software to simulate dynamic fabric movement</p>
+        <p>A 2D platformer game built using Python and PyGame.</p>
         <p>Rewards: Collect strawberries and raspberries to boost your score.</p>
         <p>Threats: Dodge obstacles like lava pools and avoid enemy ninja frogs to survive.</p>
         <p>Levels & Challenges: Each level increases in difficulty, introducing new threats and rewards.</p>
@@ -55,7 +55,7 @@ const projectData = [
     title: "3D Modelling Fabric Simulation",
     description: (
       <div>
-        <p>A 2D platformer game built using Python and PyGame.</p>
+        <p>3D modelling on Blender graphics software to simulate dynamic fabric movement</p>
         <p>Developing 2D mesh systems and controlling spring tensions.</p>
       </div>
     ),

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon flower-icon">
-  <!-- Center circle -->
-  <circle cx="12" cy="12" r="2" fill="#FFB6C1" />
-  <!-- Petals -->
-  <path d="M12 2a2 2 0 0 1 2 2 2 2 0 0 1-4 0 2 2 0 0 1 2-2zm10 10a2 2 0 0 1-2 2 2 2 0 0 1 0-4 2 2 0 0 1 2 2zm-10 10a2 2 0 0 1-2-2 2 2 0 0 1 4 0 2 2 0 0 1-2 2zM2 12a2 2 0 0 1 2-2 2 2 0 0 1 0 4 2 2 0 0 1-2-2zm16.95-7.05a2 2 0 1 1-2.83 2.83 2 2 0 0 1 2.83-2.83zM7.05 7.05a2 2 0 1 1-2.83-2.83 2 2 0 0 1 2.83 2.83zm10.9 10.9a2 2 0 1 1-2.83-2.83 2 2 0 0 1 2.83 2.83zM7.05 16.95a2 2 0 1 1-2.83 2.83 2 2 0 0 1 2.83-2.83z" fill="#FF69B4" />
-</svg>

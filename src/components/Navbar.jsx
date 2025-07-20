@@ -1,6 +1,5 @@
-
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import './Navbar.css';
 
 function Navbar() {
@@ -12,17 +11,18 @@ function Navbar() {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
   return (
-    <nav className="navbar">
-      <div className="links">
-        <Link to="/">home</Link>
-        <Link to="/projects">projects</Link>
-        <Link to="/education">education</Link>
+    <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-3 bg-[var(--background-color)] bg-opacity-90 shadow-md">
+      <div className="links flex gap-6 font-light text-lg">
+        <ScrollLink to="home" smooth={true} duration={500} offset={-70} className="cursor-pointer">home</ScrollLink>
+        <ScrollLink to="about" smooth={true} duration={500} offset={-70} className="cursor-pointer">about me</ScrollLink>
+        <ScrollLink to="projects" smooth={true} duration={500} offset={-70} className="cursor-pointer">projects</ScrollLink>
+        <ScrollLink to="education" smooth={true} duration={500} offset={-70} className="cursor-pointer">experience</ScrollLink>
       </div>
-      <button onClick={toggleTheme} className="theme-toggle">
+      <button onClick={toggleTheme} className="theme-toggle font-light text-sm">
         {theme === 'light' ? 'dark mode' : 'light mode'}
       </button>
     </nav>

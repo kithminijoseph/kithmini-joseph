@@ -7,7 +7,6 @@
     align-items: center;
     padding: 1rem;
     font-size: 1.5em;
-    font-family: 'monospace', 'light';
     color: var(--text-color);
 }
 
@@ -25,7 +24,6 @@
     margin-left: 1rem;
     padding: 0.5rem 1rem;
     background-color: var(--button-background);
-    font-family: 'monospace', 'light';
     font-size: 0.8em;
     border-radius: 20px;
     color: var(--text-color);
@@ -35,6 +33,6 @@
   }
   
   .theme-toggle:hover {
-    background-color: #444;
+    background-color: #84bff5;
   }
   

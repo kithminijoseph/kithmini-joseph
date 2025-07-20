@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Education.css';
 import university from '../assets/university1.svg';
 

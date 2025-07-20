@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './ColourButton.css'; 
 
 const ColorTextButton = () => {
-  const texts = ["python", "java", "c++", "sql", "groovy", "css", "html", "php"];
-  const colors = ["#000000"];
+  const texts = ["python", "java", "c++", "sql", "groovy", "css", "html", "kubernetes", "ansible", "GCP", "pandas"];
 
   const [index, setIndex] = useState(0);
 
@@ -17,9 +15,9 @@ const ColorTextButton = () => {
 
   return (
     <button
-      className="color-text-button"
+      className="color-text-button bg-black text-white p-5 font-mono text-base rounded-full cursor-pointer transition-colors duration-300 ease-in-out"
       style={{
-        backgroundColor: colors,
+        backgroundColor: "#000000",
       }}
     >
       {texts[index]}

@@ -6,16 +6,22 @@
 
 :root {
   --background-color: #def0f5;
-  --text-color: #241c10;
-  --link-color: #241c10;
-  --button-background: #def0f5;
+  --text-color: #3b2f6f;
+  --link-color: #3b2f6f;
+  --button-background: #000000;
+  --button-text: #ffffff;
+  --button-background-swapped: #ffffff;
+  --button-text-swapped: #6cb3fa;
 }
 
 [data-theme="dark"] {
-  --background-color: #241c10;
+  --background-color: #3b2f6f;
   --text-color: #def0f5;
   --link-color: #def0f5;
-  --button-background: #241c10;
+  --button-background: #ffffff;
+  --button-text: #000000;
+  --button-background-swapped: #6cb3fa;
+  --button-text-swapped: #ffffff;
 }
 
 

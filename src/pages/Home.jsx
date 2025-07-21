@@ -44,7 +44,7 @@ function Home() {
       </section>
 
       <section id="projects" className="min-h-screen flex items-center justify-center px-4 bg-transparent">
-        <div className="max-w-4xl mx-auto w-full">
+        <div className="mx-auto w-full">
           <Projects />
         </div>
       </section>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Education.css';
 import university from '../assets/university1.svg';
 
 function Education() {

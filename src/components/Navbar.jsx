@@ -21,6 +21,8 @@ function Navbar() {
         <ScrollLink to="about" smooth={true} duration={500} offset={-70} className="cursor-pointer">about me</ScrollLink>
         <ScrollLink to="projects" smooth={true} duration={500} offset={-70} className="cursor-pointer">projects</ScrollLink>
         <ScrollLink to="education" smooth={true} duration={500} offset={-70} className="cursor-pointer">experience</ScrollLink>
+        <a href="../../public/KithminiJosephFinal.pdf" download className="ml-4 px-4 py-2 text-sm rounded-full bg-white text-[var(--button-text)] border-none cursor-pointer transition-colors duration-300">download my resume 🔗</a>
+
       </div>
       <button onClick={toggleTheme} className="theme-toggle font-light text-sm">
         {theme === 'light' ? 'dark mode' : 'light mode'}
